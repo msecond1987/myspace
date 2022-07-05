@@ -1,0 +1,20 @@
+// components：組件相關
+@import '../Components/Menu/Menu';
+
+// ant組件
+.ant-btn {
+    margin-right: 8px;
+    
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+.ant-menu {
+    justify-content: right;
+}
+
+// footer
+.footer {
+    text-align: center;
+}

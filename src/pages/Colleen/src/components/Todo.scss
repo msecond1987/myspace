@@ -1,0 +1,45 @@
+@import "../shared/_variable";
+
+.Colleen {
+    .todo-container {
+        .tasks {
+            display: flex;
+            flex-direction: column;
+            max-height: 200px;
+            padding-bottom: 10px;
+            overflow-y: auto;
+
+            .task {
+                display: inline-flex;
+                align-items: center;
+                margin-bottom: 15px;
+
+                button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 10px;
+                    margin-right: 0;
+                    padding: 0;
+                    width: 35px;
+                    height: 28px;
+                    border-radius: 5px;
+                }
+
+                .ant-input[disabled] {
+                    background-color: $main-co-2;
+                    color: rgb(136, 136, 136);
+                    border-color: $main-line-1;
+                }
+            }
+
+
+        }
+
+        .create-task {
+            padding-top: 20px;
+            border-top: 1px dashed $main-line-1;
+            ;
+        }
+    }
+}

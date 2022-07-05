@@ -1,0 +1,256 @@
+@import "../shared/_variable";
+
+.Colleen {
+    #itemView {
+        .ant-input-group {
+            height: 36px;
+
+            >* {
+                height: 100%;
+
+                >button {
+                    height: 100%;
+                }
+            }
+        }
+
+        .icon-btn {
+            text-align: center;
+            display: inline-block;
+            margin: 2%;
+
+            >span {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+
+            }
+
+            >div {
+                font-size: 15px;
+                margin-top: 5px;
+            }
+
+            .ant-btn {
+                max-width: auto;
+                width: 80px;
+                height: 80px;
+
+                .anticon {
+                    font-size: 30px;
+                    color: rgb(121, 121, 121);
+                }
+
+            }
+        }
+
+        .con {
+            display: flex;
+
+            .sider {
+                min-width: 120px;
+            }
+
+            .list {
+                margin: 0 2%;
+                flex: 1;
+                background-color: $main-co-2;
+                padding: 30px;
+
+                .ant-input-search {
+                    margin: 10px 0 20px;
+                }
+
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                .tab-scroll {
+                    display: flex;
+                    margin-bottom: 25px;
+
+                    a {
+                        min-width: 100px;
+                        margin-right: 15px;
+                        text-align: center;
+                        color: $co-w;
+                        background-color: $main-co-2;
+                        border: 2px solid $secondary-co-1;
+                        padding: 4px;
+                        border-radius: 50px;
+                    }
+                }
+
+                .expired {
+                    margin-top: 15px;
+
+                    >div:first-child {
+                        color: $co-red;
+                        font-weight: bold;
+                    }
+                }
+
+                .notExpired {
+                    margin-top: 15px;
+
+                    >div:first-child {
+                        color: $third-co-1;
+                        font-weight: bold;
+                    }
+                }
+
+
+                .itemList {
+                    display: inline-flex;
+                    flex-wrap: wrap;
+
+                    .itemBlock {
+                        width: 30.333%;
+                    }
+                }
+
+                .listItem {
+                    display: inline-flex;
+                    flex-wrap: wrap;
+                    width: 265px;
+                    margin: 15px;
+                    padding: 15px;
+                    border-radius: 8px;
+                    background-color: $main-co-3;
+                }
+
+                .photo {
+                    display: flex;
+                    align-items: center;
+                    width: 70px;
+                    height: 70px;
+                    border: 6px solid $main-co-3;
+                }
+
+                .txt {
+                    display: flex;
+                    flex: 1;
+                    flex-direction: column;
+                    width: 0;
+                }
+
+                .info {
+                    list-style-type: none;
+                    padding: 0 10px;
+                    margin: 0;
+
+                    li {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                }
+
+                .ant-list {
+                    margin: 20px 0;
+                }
+
+                .ant-list-item {
+                    background-color: $main-co-3;
+                    border-radius: 8px;
+                    padding: 4%;
+                    color: $main-font-1;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .Colleen {
+        #itemView {
+            .con {
+                .list {
+                    .listItem {
+                        width: 31%;
+                        margin: 1%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .Colleen {
+        #itemView {
+            .con {
+                .list {
+                    .listItem {
+                        width: 48%;
+                        margin: 2% 1%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Colleen {
+        #itemView {
+            .con {
+                .list {
+                    .listItem {
+                        width: 100%;
+                        margin: 3% 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .Colleen {
+        #itemView {
+
+            .con {
+                .sider {
+                    min-width: auto;
+                    max-width: 90px;
+                }
+
+                .list {
+                    padding: 15px;
+
+                    .ant-list-item {
+                        padding: 2% 4%;
+                    }
+
+                    .info {
+                        padding: 0 8%;
+                    }
+
+                    .tab-scroll {
+                        justify-content: space-between;
+
+                        a {
+                            width: 48%;
+                            min-width: auto;
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+
+
+            .ant-menu-item {
+                padding-left: 24px !important;
+            }
+
+            .ant-menu-submenu-title {
+                padding-left: 12px !important;
+            }
+        }
+    }
+}

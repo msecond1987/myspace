@@ -1,0 +1,219 @@
+nav {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: auto;
+
+    &.navbar {
+        padding: 0px;
+    }
+
+    // fixed header style
+    &.isFixed {
+        position: fixed;
+        z-index: 99;
+        animation: nav-top .5s linear;
+
+        &::after {
+            content: "";
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: 64px;
+            width: 100vw;
+            background: #001529;
+            z-index: 9;
+            animation: nav-top .5s linear;
+        }
+
+        .logo {
+            z-index: 10;
+        }
+
+        ul {
+            margin-right: 100px;
+            z-index: 10;
+        }
+    }
+
+    .logo {
+        position: absolute;
+        top: 0;
+        left: 30px;
+        width: 200px;
+        height: 64px;
+        background: url('../../../../../public/Img/logo.svg') center;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        transition: all .4s;
+    }
+
+    // 漢堡選單
+    .navbar-toggle {
+        position: absolute;
+        display: none;
+        top: 8px;
+        right: 20px;
+        width: 40px;
+        height: 30px;
+        margin: 10px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        z-index: 12;
+
+        span {
+            display: block;
+            width: 100%;
+            height: 2px;
+            margin: 6px 0;
+            background: #fff;
+            transition: all .3s;
+        }
+
+        &.active {
+            span {
+                position: absolute;
+                top: 8px;
+                width: 30px;
+
+                &:nth-child(1) {
+                    transform: rotate(45deg);
+                }
+
+                &:nth-child(2) {
+                    transform: rotate(-45deg);
+                }
+
+                &:nth-child(3) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    >ul {
+        position: absolute;
+        right: 0px;
+
+        li {
+            position: relative;
+            display: inline-block;
+            padding: 0 15px;
+            height: 64px;
+            cursor: pointer;
+
+            a {
+                color: #fff;
+                font-weight: bold;
+                text-decoration: none;
+
+                &:hover {
+                    color: #fff;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            &:hover {
+                background: #3473c3;
+            }
+
+            &.active {
+                border-bottom: 5px solid #ff7b4a;
+
+                a {
+                    color: #ff7b4a;
+
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// nav下拉置頂動態
+@keyframes nav-top {
+    0% {
+        top: -90px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    nav {
+        .logo {
+            width: 180px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        position: static;
+
+        .mask-bg {
+            content: '';
+            position: absolute;
+            top: 0;
+            height: 100vh;
+            display: none;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 10;
+        }
+
+        &.isFixed {
+            left: 0;
+            top: 0;
+            margin: auto;
+        }
+
+        // 漢堡選單
+        .navbar-toggle {
+            display: block;
+
+            &.active {
+                ~ul {
+                    display: block;
+                    right: 0px;
+                }
+
+                ~.mask-bg {
+                    display: block;
+                }
+            }
+        }
+
+        >ul {
+            display: none;
+            top: 0px;
+            right: -200px;
+            width: 180px;
+            height: 100vh;
+            padding: 80px 10px 0 10px;
+            background: #001529;
+            transition: all .4s;
+            z-index: 10;
+
+            li {
+                display: inherit;
+
+                &.active {
+                    border-left: 5px solid #ff7b4a;
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+#evelyn-login {
+    height: 100vh;
+
+    .ant-layout-content,
+    .ant-row {
+        height: 100%;
+    }
+    
+    .form-box {
+        background: #eee;
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    
+    .form-btn .ant-form-item-control-input-content {
+        text-align: center;
+    }
+}

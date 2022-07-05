@@ -1,0 +1,47 @@
+@import "../shared/_variable";
+
+.Colleen {
+    #register {
+        padding: 0px 8%;
+        min-height: calc(100vh - 150px);
+        text-align: center;
+        margin-top: 20px;
+
+        .logo {
+
+            background: url(../shared/img/logo1.png) no-repeat center center;
+            height: 150px;
+            background-size: auto 70%;
+
+
+            .ant-space-item {
+                font-size: 50px;
+                padding: 20px 70px 25px;
+                margin-bottom: 20px;
+                color: #C3CFD9;
+                background-color: $main-co-2;
+
+            }
+        }
+
+        .register-form {
+            display: inline-block;
+            max-width: 600px;
+            text-align: center;
+            width: 100%;
+
+            .register-form-button {
+                width: 100%;
+            }
+
+            .login-form-button {
+                width: 45%;
+                border: 2px solid $third-co-1;
+                background-color: $main-co-1;
+                color: $main-font-2;
+            }
+        }
+
+
+    }
+}

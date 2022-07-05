@@ -1,0 +1,209 @@
+@import "../shared/_variable";
+
+.Colleen {
+    #home {
+
+        background-color: $main-co-1;
+
+
+        .ant-tabs {
+            min-height: calc(100vh - 300px);
+        }
+
+        .ant-tabs-nav {
+            padding: 0 12px;
+        }
+
+        .ant-breadcrumb,
+        .ant-tabs-nav {
+            background-color: $main-co-2;
+        }
+
+        .ant-tabs-content-holder {
+            padding: 0 2%;
+        }
+
+        .ant-tabs-tabpane {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .icon-btn {
+            text-align: center;
+            display: inline-block;
+            margin: 2%;
+
+            >span {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+
+            }
+
+            >div {
+                font-size: 15px;
+                margin-top: 5px;
+            }
+
+            &:nth-of-type(1) {
+                .ant-btn {
+                    background-color: $co2;
+                }
+            }
+
+            &:nth-of-type(2) {
+                .ant-btn {
+                    background-color: $co3;
+                }
+            }
+
+            &:nth-of-type(3) {
+                .ant-btn {
+                    background-color: $co4;
+                }
+            }
+
+            &:nth-of-type(4) {
+                .ant-btn {
+                    background-color: $co5;
+                }
+            }
+
+            &:nth-of-type(5) {
+                .ant-btn {
+                    background-color: $co6;
+                }
+            }
+
+            &:nth-of-type(6) {
+                .ant-btn {
+                    background-color: $co7;
+                }
+            }
+
+            &:nth-of-type(7) {
+                .ant-btn {
+                    background-color: $co8;
+                }
+            }
+
+            .ant-btn {
+                max-width: auto;
+                width: 80px;
+                height: 80px;
+                background-color: $co1;
+                border: 5px solid $main-line-2;
+                border: none;
+
+                .anticon {
+                    font-size: 30px;
+                    color: #fff;
+                }
+
+            }
+        }
+    }
+
+    .furniturePop {
+        .iconBlock {
+            margin-bottom: 20px;
+            margin-top: -10px;
+            padding-top: 5px;
+            height: 230px;
+            overflow-y: auto;
+
+            .ant-radio-button-wrapper {
+                width: 55px;
+                height: 55px;
+                margin: 0 10px 15px;
+                border-radius: 50%;
+                line-height: 0;
+                background-color: $main-co-3;
+                border: 2px solid $main-line-1;
+                color: $main-font-2;
+                display: inline-flex;
+                align-items: center;
+
+                &::before {
+                    display: none;
+                }
+
+
+                .anticon {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+
+    .furnitureEditPop {
+        .icon-btn {
+            display: flex;
+            margin-bottom: 10px;
+
+            .ant-btn {
+                width: 45px;
+                height: 45px;
+                border: none;
+
+                &:hover {
+                    background-color: $main-co-3;
+                    color: $main-font-1;
+                }
+
+                .anticon {
+                    font-size: 25px;
+                }
+
+
+            }
+
+            .ant-input-affix-wrapper {
+                flex: 1;
+            }
+        }
+    }
+
+    .boxPop {
+        .todoList {
+            list-style: none;
+            padding: 0;
+
+            li {
+                margin-bottom: 15px;
+                display: inline-flex;
+                width: 100%;
+                align-items: center;
+
+                button {
+                    width: 32px;
+                    height: 26px;
+                    padding: 0px;
+                    justify-content: center;
+                    align-items: center;
+                    display: inline-flex;
+                    margin-left: 15px;
+                    border-radius: 6px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .Colleen {
+        #home {
+            .icon-btn .ant-btn {
+                width: 16vw;
+                height: 16vw;
+                margin: 2vw;
+                border-width: 3px;
+
+                .anticon {
+                    font-size: 7vw;
+                }
+            }
+        }
+    }
+}

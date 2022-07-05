@@ -1,0 +1,187 @@
+@import "_variable";
+
+.Colleen {
+    color: $main-font-1;
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        -webkit-text-fill-color: $main-font-2;
+        box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0) inset;
+        transition: background-color 5000s ease-in-out 0s;
+    }
+
+    .ant-layout {
+        background-color: $main-co-1;
+    }
+
+    .ant-tabs,
+    .ant-modal-confirm-body .ant-modal-confirm-content {
+        color: $main-font-1;
+    }
+
+    .ant-btn {
+        background-color: $main-co-3;
+        border-color: $secondary-co-1;
+        color: $main-font-1;
+        border-radius: 50px;
+    }
+
+    //主按鈕樣式
+    .ant-btn-primary,
+    .ant-btn-dangerous,
+    .ant-btn-dangerous:focus,
+    .ant-btn-dangerous:hover {
+        background-color: $secondary-co-1;
+        color: $co-w;
+        border-color: $secondary-co-1;
+    }
+
+    .ant-menu,
+    .ant-menu-sub.ant-menu-inline {
+        background: $main-co-2;
+        color: $main-font-1;
+    }
+
+    .ant-menu-submenu-arrow {
+        color: $main-font-1;
+    }
+
+    .ant-menu-inline {
+        border-color: $main-co-2;
+    }
+
+    .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected,
+    .ant-menu-submenu-title:active {
+        background-color: $main-co-1;
+    }
+
+    .ant-menu-inline .ant-menu-item:after {
+        border-right-color: $secondary-co-1;
+    }
+
+    .ant-menu-item-selected,
+    .ant-modal-confirm-body .ant-modal-confirm-title {
+        color: $main-font-2;
+    }
+
+    .ant-menu-light .ant-menu-submenu-title:hover,
+    .ant-menu-submenu:hover>.ant-menu-submenu-title>.ant-menu-submenu-arrow {
+        color: $main-font-1;
+    }
+
+    .ant-breadcrumb>span:last-child {
+        color: $main-font-1;
+    }
+
+    .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn,
+    .ant-menu-light .ant-menu-item-active,
+    .ant-menu-light .ant-menu-item:hover,
+    .ant-menu-submenu-selected,
+    .ant-menu-submenu-selected .ant-menu-submenu-arrow {
+        color: $main-font-2 !important;
+    }
+
+    .ant-tabs-top>.ant-tabs-nav:before {
+        border-bottom-color: $main-line-1;
+    }
+
+    .ant-input-affix-wrapper,
+    .ant-input {
+        background-color: $main-co-2;
+        border-color: $main-line-1;
+        border-radius: 5px;
+        color: $main-font-2;
+
+    }
+
+    .ant-tabs-ink-bar {
+        background-color: $secondary-co-1;
+    }
+
+
+    .ant-divider {
+        border-color: $main-co-2;
+    }
+
+
+    .ant-input-group-addon {
+        background: transparent;
+    }
+
+    .ant-input-search>.ant-input-group>.ant-input-group-addon:last-child .ant-input-search-button {
+        border-radius: 0 5px 5px 0;
+    }
+
+
+    .ant-modal-content,
+    .ant-modal-header,
+    .ant-drawer-header,
+    .ant-drawer-content {
+        background-color: $main-co-2;
+    }
+
+    .ant-modal-header,
+    .ant-modal-footer {
+        border-color: $main-line-1;
+    }
+
+    .ant-modal-title,
+    .ant-picker-suffix,
+    .ant-picker-input>input {
+        color: $main-font-2;
+    }
+
+    .ant-modal-close,
+    .anticon.ant-input-clear-icon,
+    .ant-drawer-close,
+    .ant-upload {
+        color: $main-font-1;
+    }
+
+
+    .ant-modal-content {
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .ant-radio-button-wrapper-checked:not([class*=" ant-radio-button-wrapper-disabled"]).ant-radio-button-wrapper:first-child {
+        border-right: none;
+    }
+
+    .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):focus-within {
+        box-shadow: 0 0 0 3px $secondary-co-2;
+    }
+
+    .ant-upload.ant-upload-select-picture-card {
+        background-color: $main-co-3;
+        border-color: $main-line-1;
+    }
+
+    .ant-select:not(.ant-select-customize-input) .ant-select-selector,
+    .ant-picker {
+        background-color: $main-co-2;
+        border-color: $main-line-1;
+    }
+
+
+    .ant-tabs-extra-content .ant-btn {
+        padding: 0 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: $main-co-1;
+    }
+
+    .ant-tabs-tab+.ant-tabs-tab {
+        margin: 0 10px 0 18px;
+    }
+
+    .ant-tabs-nav-list {
+        .ant-tabs-tab:first-of-type {
+            margin-right: 10px;
+        }
+    }
+
+
+}
